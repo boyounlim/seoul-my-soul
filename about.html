@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEOUL | 전통과 미래가 공존하는 빛나는 도시</title>
-  <meta name="description" content="전통 문화와 현대적인 첨단 기술, 그리고 한강의 여유가 어우러진 매력적인 글로벌 도시 서울을 소개합니다.">
+  <title>About SEOUL | 전통과 혁신의 하모니</title>
+  <meta name="description" content="2000년 역사 위에 피어난 첨단 미래 스마트 도시 서울의 흥미롭고 깊이 있는 연대기와 조화를 소개합니다.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,8 +31,8 @@
 
       <nav>
         <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link" style="color: var(--accent-blue);">Home</a></li>
-          <li><a href="about.html" class="nav-link">About SEOUL</a></li>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link" style="color: var(--accent-blue);">About SEOUL</a></li>
           <li><a href="landmarks.html" class="nav-link">Landmarks</a></li>
           <li><a href="experience.html" class="nav-link">Experiences</a></li>
         </ul>
@@ -40,33 +40,18 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Subpage Hero Banner -->
+  <section class="sub-hero">
+    <div class="sub-hero-content">
+      <span class="hero-subtitle">The Harmony</span>
+      <h1 class="sub-hero-title">전통과 혁신의 공존</h1>
+      <p class="sub-hero-subtitle">오랜 세월 동안 다듬어진 한국 미학의 깊이와, 숨 가쁘게 전진하는 마천루가 완성한 독보적인 서울의 두 가지 매력을 소개합니다.</p>
+    </div>
+  </section>
+
   <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <span class="hero-subtitle">Tradition Meets Future</span>
-        <h1 class="hero-title">SEOUL, MY <span>SOUL</span></h1>
-        <p class="hero-description">
-          역동적인 에너지와 오랜 깊이의 역사가 숨 쉬는 곳. 매혹적인 야경과 한강의 여유가 가득한 도시, 당신의 감성을 깨울 서울로 초대합니다.
-        </p>
-        <div class="cta-group">
-          <a href="about.html" class="btn btn-primary" id="btn-discover">서울 알아보기 <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="experience.html" class="btn btn-secondary" id="btn-experience">체험 가이드</a>
-        </div>
-      </div>
-      <a href="#about-teaser" class="scroll-down" id="scroll-to-about">
-        <span>Scroll Down</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </section>
-
-    <!-- About Teaser Section -->
-    <section id="about-teaser">
-      <div class="section-header">
-        <span class="section-subtitle">The Harmony</span>
-        <h2 class="section-title">전통과 혁신의 공존</h2>
-      </div>
-
+    <!-- About Section (Intro & 3D Tilt) -->
+    <section id="about">
       <div class="dualism-grid">
         <div class="dualism-content">
           <h3>2,000년 역사 위에 피어난 첨단 미래</h3>
@@ -76,7 +61,6 @@
           <p>
             골목 구석구석 서려 있는 선조들의 숨결을 느끼고, 한걸음 내디디면 세계에서 가장 빠르게 변화하는 트렌디한 문화를 마주하는 놀라운 입체적 경험을 서울에서 만나보세요.
           </p>
-          <a href="about.html" class="btn btn-secondary" style="margin-top: 10px;" id="btn-read-more">서울 스토리 깊이 보기 <i class="fa-solid fa-arrow-right"></i></a>
         </div>
         
         <div class="dualism-visual" id="visual-frame">
@@ -88,78 +72,55 @@
       </div>
     </section>
 
-    <!-- Landmarks Teaser Section -->
-    <section id="landmarks-teaser" style="border-top: 1px solid var(--glass-border); background: linear-gradient(180deg, var(--bg-dark) 0%, #ffffff 50%, var(--bg-dark) 100%);">
-      <div class="section-header">
-        <span class="section-subtitle">Top Destinations</span>
-        <h2 class="section-title">서울의 대표 랜드마크</h2>
+    <!-- Expanded Timeline Section -->
+    <section id="history-details" style="padding-top: 0; background: linear-gradient(180deg, var(--bg-dark) 0%, #ffffff 50%, var(--bg-dark) 100%); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
+      <div class="section-header" style="margin-top: 80px;">
+        <span class="section-subtitle">The Chronicles</span>
+        <h2 class="section-title">서울, 천년의 연대기</h2>
       </div>
-
+      
       <div class="landmarks-grid">
-        <!-- Landmark 1 -->
+        <!-- Card 1: Hanyang Capital -->
         <article class="landmark-card">
           <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Heritage</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=800&q=80" alt="경복궁 근정전 야경">
+            <span class="landmark-tag">1394년</span>
+            <img class="landmark-image" src="https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?auto=format&fit=crop&w=800&q=80" alt="조선 왕조 한양 도성">
           </div>
           <div class="landmark-info">
-            <h3 class="landmark-title">경복궁</h3>
+            <h3 class="landmark-title">조선 왕조와 배산임수의 수도 지정</h3>
             <p class="landmark-desc">
-              조선 왕조의 중심이자 한국 전통 처마 곡선과 대자연이 어우러진 옛 미학의 결정체입니다.
+              태조 이성계가 조선을 개국하며 남산, 북악산, 인왕산, 낙산에 둘러싸인 천혜의 요새 한양(서울)을 수도로 낙점했습니다. 풍수지리적 기품과 실용성을 동시에 갖춘 명당이었습니다.
             </p>
           </div>
         </article>
 
-        <!-- Landmark 2 -->
+        <!-- Card 2: Modernization -->
         <article class="landmark-card">
           <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Romantic</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1504512485060-750d3e5aa0b1?auto=format&fit=crop&w=800&q=80" alt="N서울타워 전망">
+            <span class="landmark-tag">20세기 후반</span>
+            <img class="landmark-image" src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="전후 서울의 현대화">
           </div>
           <div class="landmark-info">
-            <h3 class="landmark-title">N서울타워</h3>
+            <h3 class="landmark-title">한강의 기적과 눈부신 도시 성장</h3>
             <p class="landmark-desc">
-              서울 한복판 남산 정상에서 천만 시민 도시의 보석 같은 밤하늘 파노라마를 품을 수 있는 로맨틱한 명소입니다.
+              전쟁의 아픔과 폐허를 딛고 일어선 대한민국 경제 성장의 심장 역할을 했습니다. 한강을 가로지르는 대교들과 메트로, 고속 빌딩숲이 들어서며 도시 계획 역사의 기적으로 기록되었습니다.
             </p>
           </div>
         </article>
 
-        <!-- Landmark 3 -->
+        <!-- Card 3: Smart Technology -->
         <article class="landmark-card">
           <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Future</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80" alt="동대문디자인플라자 전경">
+            <span class="landmark-tag">현재 & 미래</span>
+            <img class="landmark-image" src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80" alt="첨단 미래 스마트 시티 서울">
           </div>
           <div class="landmark-info">
-            <h3 class="landmark-title">동대문 디자인 플라자 (DDP)</h3>
+            <h3 class="landmark-title">세계 선두의 지능형 스마트시티</h3>
             <p class="landmark-desc">
-              비정형 은빛 은박을 형상화한 신비로운 디자인 문화 허브로, 미래 지향적인 크리에이티브를 대변합니다.
+              실시간 광대역 초고속 5G 네트워크, 공공 빅데이터 교통관제 시스템, 세계 최초 가상 행정 메타버스를 탑재한 크리에이티브 시티입니다. 현대인의 최첨단 삶을 풍요롭게 정의하고 있습니다.
             </p>
           </div>
         </article>
-      </div>
-
-      <div style="text-align: center; margin-top: 60px;">
-        <a href="landmarks.html" class="btn btn-primary">전체 랜드마크 & 강남 스포트라이트 보기 <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </section>
-
-    <!-- Experience Teaser Section -->
-    <section id="experience-teaser">
-      <div class="section-header">
-        <span class="section-subtitle">Discover Your Vibe</span>
-        <h2 class="section-title">감각으로 만나는 서울</h2>
-      </div>
-
-      <div class="experience-box" style="padding: 50px; text-align: center;">
-        <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: #121824;">당신의 오감을 채워줄 세 가지 컬러</h3>
-        <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto 40px; font-weight: 400;">
-          세계 최고 트렌드 문화의 중심 **K-Culture**, 천만 대도시 도심을 시원하게 정화하는 치유의 한강 **Urban Nature**, 그리고 100년 전통 맛집과 미쉐린 레스토랑의 완벽한 미식 향연 **Gourmet**까지, 서울은 온전히 살아 숨 쉬고 있습니다.
-        </p>
-        
-        <div class="cta-group" style="margin-top: 20px;">
-          <a href="experience.html" class="btn btn-secondary">인터랙티브 라이프 체험하기 <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
       </div>
     </section>
   </main>

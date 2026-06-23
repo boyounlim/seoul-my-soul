@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences | 서울 라이프스타일 체험</title>
+  <meta name="description" content="전 세계 트렌드를 선도하는 K-컬처, 도심 속 여유 가득한 한강 피크닉, 오감을 깨우는 미식 투어까지 다채로운 라이프스타일을 탐험하세요.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo" id="main-logo">SEO<span>U</span>L</a>
+      
+      <div class="menu-toggle" id="mobile-menu-btn" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About SEOUL</a></li>
+          <li><a href="landmarks.html" class="nav-link">Landmarks</a></li>
+          <li><a href="experience.html" class="nav-link" style="color: var(--accent-blue);">Experiences</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Subpage Hero Banner -->
+  <section class="sub-hero">
+    <div class="sub-hero-content">
+      <span class="hero-subtitle">Discover Your Vibe</span>
+      <h1 class="sub-hero-title">감각으로 만나는 서울</h1>
+      <p class="sub-hero-subtitle">케이팝의 박동 소리, 고요한 남산 숲길의 소리, 맛있는 야시장의 활기참까지 서울을 온전히 온몸으로 만나보는 라이프 스타일 가이드.</p>
+    </div>
+  </section>
+
+  <main>
+    <!-- Experience Tab Section -->
+    <section id="experience">
+      <div class="section-header">
+        <span class="section-subtitle">Choose Your Experience</span>
+        <h2 class="section-title">다채로운 서울의 향기</h2>
+      </div>
+
+      <div class="experience-box">
+        <div class="exp-tabs" role="tablist">
+          <button class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-culture" id="tab-btn-culture">K-컬처 & 페스티벌</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-nature" id="tab-btn-nature">도심 속 자연 휴식</button>
+          <button class="tab-btn" role="tab" aria-selected="false" data-tab="tab-gourmet" id="tab-btn-gourmet">미식의 천국</button>
+        </div>
+
+        <!-- Culture Tab -->
+        <div class="tab-content active" id="tab-culture">
+          <div class="exp-visual">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="케이팝과 길거리 공연 문화">
+          </div>
+          <div class="exp-text">
+            <h3>K-컬처의 심장에서 트렌드를 입다</h3>
+            <p>
+              전 세계를 뒤흔드는 K-Pop, K-Beauty, 웰메이드 드라마의 중심지가 바로 서울입니다. 홍대 인디 거리의 뜨거운 버스킹부터 성수동의 세련된 팝업스토어까지, 지루할 틈 없이 흘러가는 글로벌 메가 트렌드를 오감으로 맛보세요.
+            </p>
+            <div class="stat-row">
+              <div class="stat-item">
+                <div class="stat-value">No.1</div>
+                <div class="stat-label">Global Content Hub</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">24/7</div>
+                <div class="stat-label">Lively Streets</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nature Tab -->
+        <div class="tab-content" id="tab-nature">
+          <div class="exp-visual">
+            <img src="https://images.unsplash.com/photo-1494883759339-0b1681591d33?auto=format&fit=crop&w=800&q=80" alt="여의도 한강공원과 잔디밭">
+          </div>
+          <div class="exp-text">
+            <h3>도시 한가운데를 관통하는 치유의 한강</h3>
+            <p>
+              서울의 중심을 굽이치는 한강과 도심을 둘러싼 푸른 산은 천만 인구 대도시의 진정한 축복입니다. 피크닉을 즐기기 좋은 한강시민공원과 역사를 품은 한양도성길은 도시의 숨 가쁜 템포 속에서 평화롭고 깊이 있는 휴식을 선사합니다.
+            </p>
+            <div class="stat-row">
+              <div class="stat-item">
+                <div class="stat-value">11개</div>
+                <div class="stat-label">아름다운 한강공원</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">18.6km</div>
+                <div class="stat-label">서울 한양도성 둘레길</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gourmet Tab -->
+        <div class="tab-content" id="tab-gourmet">
+          <div class="exp-visual">
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=800&q=80" alt="맛있는 한국 전통 길거리 음식">
+          </div>
+          <div class="exp-text">
+            <h3>미쉐린 파인다이닝부터 길거리 푸드까지</h3>
+            <p>
+              활기찬 광장시장에서 느끼는 김이 모락모락 나는 떡볶이와 빈대떡의 따뜻함, 그리고 세계적인 셰프들이 새롭게 재해석한 고급 모던 한식 파인데이닝까지 서울은 진정한 미식가의 낙원입니다. 밤이 되면 야시장의 흥겨움이 또 다른 깊은 미식 여행으로 이끕니다.
+            </p>
+            <div class="stat-row">
+              <div class="stat-item">
+                <div class="stat-value">180+</div>
+                <div class="stat-label">미쉐린 가이드 선정 맛집</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-value">100년</div>
+                <div class="stat-label">전통 시장의 미각 역사</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <a href="index.html" class="logo" id="footer-logo">SEO<span>U</span>L</a>
+        <p>전통적인 문화 가치와 하이테크 미래가 함께 빛나고 쉼 없이 전진하는 매력 가득한 메트로폴리스 서울.</p>
+        <div class="social-links">
+          <a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube" id="social-youtube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.instagram.com/seoul_official" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/seoul.kr" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" id="social-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="about.html">서울 스토리</a></li>
+          <li><a href="landmarks.html">명소 추천</a></li>
+          <li><a href="experience.html">문화 예술</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Official Sites</h4>
+        <ul>
+          <li><a href="https://www.seoul.go.kr" target="_blank" rel="noopener">서울시청</a></li>
+          <li><a href="https://korean.visitseoul.net" target="_blank" rel="noopener">Visit Seoul 포털</a></li>
+          <li><a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener">라이브 서울</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Seoul Metropolitan Government. Designed for Global Promotion.</p>
+      <div class="footer-bottom-links">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">이용약관</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // 1. Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // 2. Interactive Experience Tabs System
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class from all buttons and content
+        tabBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        // Add active to selected button and match content
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+
+    // 3. Mobile Navigation Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenuBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when link is clicked
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
