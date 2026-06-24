@@ -3,214 +3,177 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About SEOUL | 전통과 혁신의 하모니</title>
-  <meta name="description" content="2000년 역사 위에 피어난 첨단 미래 스마트 도시 서울의 흥미롭고 깊이 있는 연대기와 조화를 소개합니다.">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>About Us | Sustainable Soul</title>
+  <meta name="description" content="지속 가능한 삶과 더 나은 미래를 지향하는 브랜드 가치와 그린 서울 프로젝트를 소개합니다.">
   
   <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header id="header">
-    <div class="nav-container">
-      <a href="index.html" class="logo" id="main-logo">SEO<span>U</span>L</a>
-      
-      <div class="menu-toggle" id="mobile-menu-btn" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
+  <!-- App Wrapper Simulator -->
+  <div class="app-frame">
+    
+    <!-- Header with Back Button -->
+    <header class="app-header">
+      <div class="nav-back-row">
+        <a href="index.html" class="back-btn" aria-label="이전 페이지">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <span class="back-page-title">Brand Story</span>
       </div>
+      <button class="bell-btn" id="noti-bell" aria-label="알림">
+        <i class="fa-regular fa-bell"></i>
+      </button>
+    </header>
 
-      <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link" style="color: var(--accent-blue);">About SEOUL</a></li>
-          <li><a href="landmarks.html" class="nav-link">Landmarks</a></li>
-          <li><a href="experience.html" class="nav-link">Experiences</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Scrollable Main Content -->
+    <main class="content-wrapper">
+      
+      <!-- Subpage Hero Banner -->
+      <section class="subpage-hero-banner">
+        <span class="subpage-subtitle">Eco Philosophy</span>
+        <h1 class="subpage-title">지속 가능한 삶을<br>선물하는 우리의 여정</h1>
+      </section>
 
-  <!-- Subpage Hero Banner -->
-  <section class="sub-hero">
-    <div class="sub-hero-content">
-      <span class="hero-subtitle">The Harmony</span>
-      <h1 class="sub-hero-title">전통과 혁신의 공존</h1>
-      <p class="sub-hero-subtitle">오랜 세월 동안 다듬어진 한국 미학의 깊이와, 숨 가쁘게 전진하는 마천루가 완성한 독보적인 서울의 두 가지 매력을 소개합니다.</p>
-    </div>
-  </section>
-
-  <main>
-    <!-- About Section (Intro & 3D Tilt) -->
-    <section id="about">
-      <div class="dualism-grid">
-        <div class="dualism-content">
-          <h3>2,000년 역사 위에 피어난 첨단 미래</h3>
-          <p>
-            서울은 오천 년 한반도 역사에서 가장 오랜 기간 수도의 자리를 지켜온 역사도시입니다. 고즈넉한 옛 궁궐의 담장 바로 너머에는 세계를 선도하는 IT 스마트 인프라와 초현대적인 빌딩 숲이 웅장하게 대조를 이룹니다.
-          </p>
-          <p>
-            골목 구석구석 서려 있는 선조들의 숨결을 느끼고, 한걸음 내디디면 세계에서 가장 빠르게 변화하는 트렌디한 문화를 마주하는 놀라운 입체적 경험을 서울에서 만나보세요.
-          </p>
-        </div>
+      <!-- About Card Details -->
+      <section class="about-card-section">
         
-        <div class="dualism-visual" id="visual-frame">
-          <div class="glass-card-info">
-            <h4>경복궁과 빌딩 숲</h4>
-            <p>전통 목조 건축의 정수와 마천루가 완성하는 시공간의 아름다운 충돌</p>
+        <!-- Card 1: Our Mission -->
+        <article class="about-card">
+          <h2 class="about-card-title">
+            <i class="fa-solid fa-leaf" style="color: var(--primary);"></i>
+            의식 있는 선택의 가치
+          </h2>
+          <p class="about-card-text">
+            우리는 일상에서 소비하는 작은 물건 하나가 지구 생태계에 큰 영향을 미친다고 믿습니다. 플라스틱 대신 대나무를 선택하고, 합성 섬유 대신 오가닉 린넨을 고르는 작은 실천들이 지속 가능한 미래를 만듭니다.
+          </p>
+          <div class="about-highlight-box">
+            "당신의 더 나은 오늘과 지구의 아름다운 내일을 위해, 우리는 지속 가능한 일상의 시작을 함께합니다."
           </div>
-        </div>
-      </div>
-    </section>
+        </article>
 
-    <!-- Expanded Timeline Section -->
-    <section id="history-details" style="padding-top: 0; background: linear-gradient(180deg, var(--bg-dark) 0%, #ffffff 50%, var(--bg-dark) 100%); border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);">
-      <div class="section-header" style="margin-top: 80px;">
-        <span class="section-subtitle">The Chronicles</span>
-        <h2 class="section-title">서울, 천년의 연대기</h2>
+        <!-- Card 2: Green Initiatives -->
+        <article class="about-card">
+          <h2 class="about-card-title">
+            <i class="fa-solid fa-earth-asia" style="color: var(--primary);"></i>
+            그린 서울 (Green Seoul)
+          </h2>
+          <p class="about-card-text">
+            서울의 울창한 숲과 유유히 흐르는 한강을 보존하기 위해, 우리는 지역 사회와 연대하여 다양한 친환경 활동을 펼치고 있습니다. 제로웨이스트 포장 마켓 활성화, 비건 라이프스타일 확산, 그리고 매 주말 한강 플로깅 캠페인을 운영합니다.
+          </p>
+          
+          <div class="about-stat-row">
+            <div class="about-stat-item">
+              <div class="about-stat-num">No.1</div>
+              <div class="about-stat-label">친환경 가치</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="about-stat-num">80+</div>
+              <div class="about-stat-label">파트너 브랜드</div>
+            </div>
+            <div class="about-stat-item">
+              <div class="about-stat-num">15K</div>
+              <div class="about-stat-label">에코 캠페이너</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Our Value Promise -->
+        <article class="about-card">
+          <h2 class="about-card-title">
+            <i class="fa-solid fa-hand-holding-heart" style="color: var(--primary);"></i>
+            우리의 세 가지 약속
+          </h2>
+          <p class="about-card-text">
+            1. **정직한 원료 사용**: 농약과 화학 비료 없이 건강하게 자란 친환경 원단과 오가닉 소재만 고집합니다.<br><br>
+            2. **윤리적 생산 방식**: 노동자의 권리를 존중하며 에너지를 절약하고 탄소 배출을 줄이는 에코 프렌들리 팩토리에서 생산합니다.<br><br>
+            3. **자연 생분해 패키지**: 플라스틱 충전재와 코팅 박스 대신 생분해 옥수수 전지 봉투와 친환경 재생지 패키지를 적용합니다.
+          </p>
+        </article>
+
+      </section>
+
+      <!-- Small Bottom Spacing -->
+      <div class="bottom-spacing"></div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <div class="nav-tab-item" onclick="location.href='index.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <span class="nav-tab-label">Home</span>
       </div>
       
-      <div class="landmarks-grid">
-        <!-- Card 1: Hanyang Capital -->
-        <article class="landmark-card">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">1394년</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?auto=format&fit=crop&w=800&q=80" alt="조선 왕조 한양 도성">
-          </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">조선 왕조와 배산임수의 수도 지정</h3>
-            <p class="landmark-desc">
-              태조 이성계가 조선을 개국하며 남산, 북악산, 인왕산, 낙산에 둘러싸인 천혜의 요새 한양(서울)을 수도로 낙점했습니다. 풍수지리적 기품과 실용성을 동시에 갖춘 명당이었습니다.
-            </p>
-          </div>
-        </article>
-
-        <!-- Card 2: Modernization -->
-        <article class="landmark-card">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">20세기 후반</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="전후 서울의 현대화">
-          </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">한강의 기적과 눈부신 도시 성장</h3>
-            <p class="landmark-desc">
-              전쟁의 아픔과 폐허를 딛고 일어선 대한민국 경제 성장의 심장 역할을 했습니다. 한강을 가로지르는 대교들과 메트로, 고속 빌딩숲이 들어서며 도시 계획 역사의 기적으로 기록되었습니다.
-            </p>
-          </div>
-        </article>
-
-        <!-- Card 3: Smart Technology -->
-        <article class="landmark-card">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">현재 & 미래</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80" alt="첨단 미래 스마트 시티 서울">
-          </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">세계 선두의 지능형 스마트시티</h3>
-            <p class="landmark-desc">
-              실시간 광대역 초고속 5G 네트워크, 공공 빅데이터 교통관제 시스템, 세계 최초 가상 행정 메타버스를 탑재한 크리에이티브 시티입니다. 현대인의 최첨단 삶을 풍요롭게 정의하고 있습니다.
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-about">
-        <a href="index.html" class="logo" id="footer-logo">SEO<span>U</span>L</a>
-        <p>전통적인 문화 가치와 하이테크 미래가 함께 빛나고 쉼 없이 전진하는 매력 가득한 메트로폴리스 서울.</p>
-        <div class="social-links">
-          <a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube" id="social-youtube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/seoul_official" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/seoul.kr" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" id="social-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <div class="nav-tab-item" onclick="location.href='landmarks.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+        <span class="nav-tab-label">Search</span>
       </div>
-
-      <div class="footer-links">
-        <h4>Discover</h4>
-        <ul>
-          <li><a href="about.html">서울 스토리</a></li>
-          <li><a href="landmarks.html">명소 추천</a></li>
-          <li><a href="experience.html">문화 예술</a></li>
-        </ul>
+      
+      <div class="nav-tab-item" onclick="toggleFavoritesTab()">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <span class="nav-tab-label">Favorites</span>
       </div>
-
-      <div class="footer-links">
-        <h4>Official Sites</h4>
-        <ul>
-          <li><a href="https://www.seoul.go.kr" target="_blank" rel="noopener">서울시청</a></li>
-          <li><a href="https://korean.visitseoul.net" target="_blank" rel="noopener">Visit Seoul 포털</a></li>
-          <li><a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener">라이브 서울</a></li>
-        </ul>
+      
+      <div class="nav-tab-item active" onclick="location.href='about.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <span class="nav-tab-label">Profile</span>
       </div>
-    </div>
+    </nav>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 Seoul Metropolitan Government. Designed for Global Promotion.</p>
-      <div class="footer-bottom-links">
-        <a href="#">개인정보처리방침</a>
-        <a href="#">이용약관</a>
-      </div>
-    </div>
-  </footer>
+  </div>
 
-  <!-- Scripts -->
+  <!-- Micro-interactions Script -->
   <script>
-    // 1. Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-
-    // 2. Mobile Navigation Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenuBtn.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-
-    // Close menu when link is clicked
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuBtn.classList.remove('active');
-        navMenu.classList.remove('active');
+    function toggleFavoritesTab() {
+      // Create and show toast
+      const toast = document.createElement('div');
+      toast.className = 'toast-notif';
+      toast.innerText = '관심 상품 목록을 불러옵니다.';
+      Object.assign(toast.style, {
+        position: 'absolute',
+        bottom: '100px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        background: 'rgba(30, 38, 32, 0.9)',
+        color: '#FAF7F2',
+        padding: '10px 20px',
+        borderRadius: '20px',
+        fontSize: '0.8rem',
+        fontWeight: '500',
+        zIndex: '1000',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+        pointerEvents: 'none',
+        opacity: '0',
+        transition: 'all 0.3s ease'
       });
-    });
 
-    // 3. Hover Parallax Effect on the Image Frame
-    const visualFrame = document.getElementById('visual-frame');
-    if (visualFrame) {
-      visualFrame.addEventListener('mousemove', (e) => {
-        const { left, top, width, height } = visualFrame.getBoundingClientRect();
-        const x = (e.clientX - left) / width - 0.5;
-        const y = (e.clientY - top) / height - 0.5;
-        
-        visualFrame.style.transform = `perspective(1000px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale(1.03)`;
-      });
+      document.querySelector('.app-frame').appendChild(toast);
       
-      visualFrame.addEventListener('mouseleave', () => {
-        visualFrame.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1)';
-      });
+      setTimeout(() => {
+        toast.style.opacity = '1';
+        toast.style.bottom = '110px';
+      }, 50);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.bottom = '100px';
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
     }
   </script>
+
 </body>
 </html>

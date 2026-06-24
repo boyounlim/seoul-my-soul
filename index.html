@@ -3,253 +3,322 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEOUL | 전통과 미래가 공존하는 빛나는 도시</title>
-  <meta name="description" content="전통 문화와 현대적인 첨단 기술, 그리고 한강의 여유가 어우러진 매력적인 글로벌 도시 서울을 소개합니다.">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>Sustainable Life for You</title>
+  <meta name="description" content="당신을 위한 지속 가능한 일상의 시작. 친환경 라이프스타일 큐레이션 플랫폼">
   
   <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header id="header">
-    <div class="nav-container">
-      <a href="index.html" class="logo" id="main-logo">SEO<span>U</span>L</a>
+  <!-- App Wrapper Simulator -->
+  <div class="app-frame">
+    
+    <!-- Header Section -->
+    <header class="app-header">
+      <div class="search-bar-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" class="search-input" id="main-search" placeholder="검색어를 입력하세요">
+      </div>
+      <button class="bell-btn" id="noti-bell" aria-label="알림">
+        <i class="fa-regular fa-bell"></i>
+        <span class="bell-badge"></span>
+      </button>
+    </header>
+
+    <!-- Scrollable Main Content -->
+    <main class="content-wrapper">
       
-      <div class="menu-toggle" id="mobile-menu-btn" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-
-      <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link" style="color: var(--accent-blue);">Home</a></li>
-          <li><a href="about.html" class="nav-link">About SEOUL</a></li>
-          <li><a href="landmarks.html" class="nav-link">Landmarks</a></li>
-          <li><a href="experience.html" class="nav-link">Experiences</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-content">
-        <span class="hero-subtitle">Tradition Meets Future</span>
-        <h1 class="hero-title">SEOUL, MY <span>SOUL</span></h1>
-        <p class="hero-description">
-          역동적인 에너지와 오랜 깊이의 역사가 숨 쉬는 곳. 매혹적인 야경과 한강의 여유가 가득한 도시, 당신의 감성을 깨울 서울로 초대합니다.
-        </p>
-        <div class="cta-group">
-          <a href="about.html" class="btn btn-primary" id="btn-discover">서울 알아보기 <i class="fa-solid fa-arrow-right"></i></a>
-          <a href="experience.html" class="btn btn-secondary" id="btn-experience">체험 가이드</a>
-        </div>
-      </div>
-      <a href="#about-teaser" class="scroll-down" id="scroll-to-about">
-        <span>Scroll Down</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </section>
-
-    <!-- About Teaser Section -->
-    <section id="about-teaser">
-      <div class="section-header">
-        <span class="section-subtitle">The Harmony</span>
-        <h2 class="section-title">전통과 혁신의 공존</h2>
-      </div>
-
-      <div class="dualism-grid">
-        <div class="dualism-content">
-          <h3>2,000년 역사 위에 피어난 첨단 미래</h3>
-          <p>
-            서울은 오천 년 한반도 역사에서 가장 오랜 기간 수도의 자리를 지켜온 역사도시입니다. 고즈넉한 옛 궁궐의 담장 바로 너머에는 세계를 선도하는 IT 스마트 인프라와 초현대적인 빌딩 숲이 웅장하게 대조를 이룹니다.
-          </p>
-          <p>
-            골목 구석구석 서려 있는 선조들의 숨결을 느끼고, 한걸음 내디디면 세계에서 가장 빠르게 변화하는 트렌디한 문화를 마주하는 놀라운 입체적 경험을 서울에서 만나보세요.
-          </p>
-          <a href="about.html" class="btn btn-secondary" style="margin-top: 10px;" id="btn-read-more">서울 스토리 깊이 보기 <i class="fa-solid fa-arrow-right"></i></a>
+      <!-- Hero Banner Section -->
+      <section class="hero-banner">
+        <div class="hero-text-content">
+          <h1 class="hero-title-en">Sustainable<br>Life<br>for You</h1>
+          <p class="hero-subtitle-ko">당신을 위한 지속 가능한 일상의 시작</p>
         </div>
         
-        <div class="dualism-visual" id="visual-frame">
-          <div class="glass-card-info">
-            <h4>경복궁과 빌딩 숲</h4>
-            <p>전통 목조 건축의 정수와 마천루가 완성하는 시공간의 아름다운 충돌</p>
+        <!-- Premium CSS Phone Mockup -->
+        <div class="phone-mockup-wrapper">
+          <div class="phone-body">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=500&q=80" alt="Sustainable green leaf">
+            </div>
+            <div class="phone-home-btn"></div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Landmarks Teaser Section -->
-    <section id="landmarks-teaser" style="border-top: 1px solid var(--glass-border); background: linear-gradient(180deg, var(--bg-dark) 0%, #ffffff 50%, var(--bg-dark) 100%);">
-      <div class="section-header">
-        <span class="section-subtitle">Top Destinations</span>
-        <h2 class="section-title">서울의 대표 랜드마크</h2>
-      </div>
-
-      <div class="landmarks-grid">
-        <!-- Landmark 1 -->
-        <article class="landmark-card">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Heritage</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=800&q=80" alt="경복궁 근정전 야경">
+      <!-- Horizontal Categories Grid -->
+      <section class="categories-container">
+        <div class="category-item" onclick="filterCategory('living')">
+          <div class="category-icon-circle">
+            <i class="fa-solid fa-house"></i>
           </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">경복궁</h3>
-            <p class="landmark-desc">
-              조선 왕조의 중심이자 한국 전통 처마 곡선과 대자연이 어우러진 옛 미학의 결정체입니다.
-            </p>
-          </div>
-        </article>
-
-        <!-- Landmark 2 -->
-        <article class="landmark-card">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Romantic</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1504512485060-750d3e5aa0b1?auto=format&fit=crop&w=800&q=80" alt="N서울타워 전망">
-          </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">N서울타워</h3>
-            <p class="landmark-desc">
-              서울 한복판 남산 정상에서 천만 시민 도시의 보석 같은 밤하늘 파노라마를 품을 수 있는 로맨틱한 명소입니다.
-            </p>
-          </div>
-        </article>
-
-        <!-- Landmark 3 -->
-        <article class="landmark-card">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Future</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80" alt="동대문디자인플라자 전경">
-          </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">동대문 디자인 플라자 (DDP)</h3>
-            <p class="landmark-desc">
-              비정형 은빛 은박을 형상화한 신비로운 디자인 문화 허브로, 미래 지향적인 크리에이티브를 대변합니다.
-            </p>
-          </div>
-        </article>
-      </div>
-
-      <div style="text-align: center; margin-top: 60px;">
-        <a href="landmarks.html" class="btn btn-primary">전체 랜드마크 & 강남 스포트라이트 보기 <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </section>
-
-    <!-- Experience Teaser Section -->
-    <section id="experience-teaser">
-      <div class="section-header">
-        <span class="section-subtitle">Discover Your Vibe</span>
-        <h2 class="section-title">감각으로 만나는 서울</h2>
-      </div>
-
-      <div class="experience-box" style="padding: 50px; text-align: center;">
-        <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: #121824;">당신의 오감을 채워줄 세 가지 컬러</h3>
-        <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto 40px; font-weight: 400;">
-          세계 최고 트렌드 문화의 중심 **K-Culture**, 천만 대도시 도심을 시원하게 정화하는 치유의 한강 **Urban Nature**, 그리고 100년 전통 맛집과 미쉐린 레스토랑의 완벽한 미식 향연 **Gourmet**까지, 서울은 온전히 살아 숨 쉬고 있습니다.
-        </p>
+          <span class="category-label">Living</span>
+        </div>
         
-        <div class="cta-group" style="margin-top: 20px;">
-          <a href="experience.html" class="btn btn-secondary">인터랙티브 라이프 체험하기 <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="category-item" onclick="filterCategory('kitchen')">
+          <div class="category-icon-circle">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <span class="category-label">Kitchen</span>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-about">
-        <a href="index.html" class="logo" id="footer-logo">SEO<span>U</span>L</a>
-        <p>전통적인 문화 가치와 하이테크 미래가 함께 빛나고 쉼 없이 전진하는 매력 가득한 메트로폴리스 서울.</p>
-        <div class="social-links">
-          <a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube" id="social-youtube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/seoul_official" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/seoul.kr" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" id="social-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        
+        <div class="category-item" onclick="filterCategory('beauty')">
+          <div class="category-icon-circle">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <span class="category-label">Beauty</span>
         </div>
-      </div>
+        
+        <div class="category-item" onclick="filterCategory('fashion')">
+          <div class="category-icon-circle">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <span class="category-label">Fashion</span>
+        </div>
+      </section>
 
-      <div class="footer-links">
-        <h4>Discover</h4>
-        <ul>
-          <li><a href="about.html">서울 스토리</a></li>
-          <li><a href="landmarks.html">명소 추천</a></li>
-          <li><a href="experience.html">문화 예술</a></li>
-        </ul>
-      </div>
+      <!-- Recommended Products Section -->
+      <section>
+        <div class="section-title-row">
+          <h2 class="section-main-title">Recommended Products</h2>
+          <a href="landmarks.html" class="section-view-all">전체보기 <i class="fa-solid fa-chevron-right" style="font-size: 0.75rem;"></i></a>
+        </div>
+        
+        <div class="products-scroll-grid" id="products-grid">
+          <!-- Product 1 -->
+          <article class="product-card" data-category="living">
+            <div class="product-image-wrapper">
+              <button class="fav-btn active" onclick="toggleFavorite(this, event)">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <img class="product-image" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=500&q=80" alt="대나무 텀블러">
+            </div>
+            <div class="product-info">
+              <div>
+                <span class="product-brand">EcoLiving Co.</span>
+                <h3 class="product-title">프리미엄 대나무 텀블러</h3>
+              </div>
+              <div class="product-bottom-row">
+                <span class="product-price">₩24,900</span>
+                <span class="product-tag">Vegan</span>
+              </div>
+            </div>
+          </article>
 
-      <div class="footer-links">
-        <h4>Official Sites</h4>
-        <ul>
-          <li><a href="https://www.seoul.go.kr" target="_blank" rel="noopener">서울시청</a></li>
-          <li><a href="https://korean.visitseoul.net" target="_blank" rel="noopener">Visit Seoul 포털</a></li>
-          <li><a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener">라이브 서울</a></li>
-        </ul>
-      </div>
-    </div>
+          <!-- Product 2 -->
+          <article class="product-card" data-category="fashion">
+            <div class="product-image-wrapper">
+              <button class="fav-btn" onclick="toggleFavorite(this, event)">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <img class="product-image" src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=500&q=80" alt="오가닉 린넨 에코백">
+            </div>
+            <div class="product-info">
+              <div>
+                <span class="product-brand">Green Thread</span>
+                <h3 class="product-title">오가닉 린넨 에코 숄더백</h3>
+              </div>
+              <div class="product-bottom-row">
+                <span class="product-price">₩18,500</span>
+                <span class="product-tag">Organic</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 Seoul Metropolitan Government. Designed for Global Promotion.</p>
-      <div class="footer-bottom-links">
-        <a href="#">개인정보처리방침</a>
-        <a href="#">이용약관</a>
-      </div>
-    </div>
-  </footer>
+      <!-- Summer Ethical Collection Section -->
+      <section class="collection-card">
+        <h2 class="collection-title">Summer<br>Ethical Collection</h2>
+        <p class="collection-subtitle">지속 가능한 여름을 위한 새로운 패션 컬렉션을 만나보세요.</p>
+        <a href="experience.html" class="collection-btn">지금 둘러보기 <i class="fa-solid fa-arrow-right"></i></a>
+        
+        <div class="collection-image-box">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Summer ethical clothing flatlay">
+        </div>
+      </section>
 
-  <!-- Scripts -->
+      <!-- Eco Tips Section -->
+      <section>
+        <div class="section-title-row">
+          <h2 class="section-main-title">Eco Tips</h2>
+        </div>
+        
+        <div class="tips-list">
+          <!-- Tip 1 -->
+          <div class="tip-item-card" onclick="location.href='experience.html#tip-zero-waste'">
+            <div class="tip-icon-box">
+              <i class="fa-solid fa-recycle"></i>
+            </div>
+            <div class="tip-content-box">
+              <h3 class="tip-title">플라스틱 제로 생활 습관</h3>
+              <p class="tip-desc">일상에서 시작하는 작은 변화</p>
+            </div>
+          </div>
+
+          <!-- Tip 2 -->
+          <div class="tip-item-card" onclick="location.href='experience.html#tip-natural-beauty'">
+            <div class="tip-icon-box">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="tip-content-box">
+              <h3 class="tip-title">천연 성분 화장품의 장점</h3>
+              <p class="tip-desc">피부와 환경을 동시에 보호하기</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Small Bottom Spacing -->
+      <div class="bottom-spacing"></div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <div class="nav-tab-item active" onclick="location.href='index.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-house"></i>
+        </div>
+        <span class="nav-tab-label">Home</span>
+      </div>
+      
+      <div class="nav-tab-item" onclick="location.href='landmarks.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <span class="nav-tab-label">Search</span>
+      </div>
+      
+      <div class="nav-tab-item" onclick="toggleFavoritesTab()">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <span class="nav-tab-label">Favorites</span>
+      </div>
+      
+      <div class="nav-tab-item" onclick="location.href='about.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <span class="nav-tab-label">Profile</span>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- Micro-interactions Script -->
   <script>
-    // 1. Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
+    // 1. Favorite Heart Button Toggle
+    function toggleFavorite(btn, event) {
+      event.stopPropagation(); // Prevent card clicks
+      btn.classList.toggle('active');
+      const icon = btn.querySelector('i');
+      if (btn.classList.contains('active')) {
+        icon.className = 'fa-solid fa-heart';
+        showToast('관심 상품에 추가되었습니다.');
       } else {
-        header.classList.remove('scrolled');
+        icon.className = 'fa-regular fa-heart';
+        showToast('관심 상품에서 삭제되었습니다.');
+      }
+    }
+
+    // 2. Filter Category interaction
+    function filterCategory(category) {
+      showToast(`${category.charAt(0).toUpperCase() + category.slice(1)} 카테고리로 필터링합니다.`);
+      const cards = document.querySelectorAll('.product-card');
+      cards.forEach(card => {
+        if (card.dataset.category === category) {
+          card.style.display = 'flex';
+          card.style.animation = 'fadeIn 0.4s ease';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 3. Simple Toast Notification helper
+    function showToast(message) {
+      // Remove existing toast if any
+      const existingToast = document.querySelector('.toast-notif');
+      if (existingToast) existingToast.remove();
+
+      const toast = document.createElement('div');
+      toast.className = 'toast-notif';
+      toast.innerText = message;
+      
+      // Inline styles for high customizability
+      Object.assign(toast.style, {
+        position: 'absolute',
+        bottom: '100px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        background: 'rgba(30, 38, 32, 0.9)',
+        color: '#FAF7F2',
+        padding: '10px 20px',
+        borderRadius: '20px',
+        fontSize: '0.8rem',
+        fontWeight: '500',
+        zIndex: '1000',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+        pointerEvents: 'none',
+        opacity: '0',
+        transition: 'all 0.3s ease'
+      });
+
+      document.querySelector('.app-frame').appendChild(toast);
+      
+      // Animate in
+      setTimeout(() => {
+        toast.style.opacity = '1';
+        toast.style.bottom = '110px';
+      }, 50);
+
+      // Animate out
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.bottom = '100px';
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
+    }
+
+    // 4. Favorites bottom tab action
+    function toggleFavoritesTab() {
+      showToast('관심 상품 목록을 불러옵니다.');
+    }
+
+    // 5. Search trigger
+    const searchInput = document.getElementById('main-search');
+    searchInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        const query = searchInput.value;
+        if (query.trim()) {
+          location.href = `landmarks.html?search=${encodeURIComponent(query)}`;
+        }
       }
     });
 
-    // 2. Mobile Navigation Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenuBtn.classList.toggle('active');
-      navMenu.classList.toggle('active');
+    // 6. Notification Bell Interaction
+    const bellBtn = document.getElementById('noti-bell');
+    bellBtn.addEventListener('click', () => {
+      const badge = bellBtn.querySelector('.bell-badge');
+      if (badge) badge.style.display = 'none';
+      showToast('새로운 알림이 없습니다.');
     });
-
-    // Close menu when link is clicked
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuBtn.classList.remove('active');
-        navMenu.classList.remove('active');
-      });
-    });
-
-    // 3. Hover Parallax Effect on the Image Frame
-    const visualFrame = document.getElementById('visual-frame');
-    if (visualFrame) {
-      visualFrame.addEventListener('mousemove', (e) => {
-        const { left, top, width, height } = visualFrame.getBoundingClientRect();
-        const x = (e.clientX - left) / width - 0.5;
-        const y = (e.clientY - top) / height - 0.5;
-        
-        visualFrame.style.transform = `perspective(1000px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale(1.03)`;
-      });
-      
-      visualFrame.addEventListener('mouseleave', () => {
-        visualFrame.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1)';
-      });
-    }
   </script>
+
+  <!-- CSS Animation Rule helper -->
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
 </body>
 </html>

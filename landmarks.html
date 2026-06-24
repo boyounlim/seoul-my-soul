@@ -3,240 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landmarks | 서울의 대표 명소</title>
-  <meta name="description" content="고궁의 우아한 처마선부터 동대문의 초현대적인 은빛 마천루까지, 서울을 대표하는 핵심 랜드마크들을 소개합니다.">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <title>Seoul Green Spots | Sustainable Life</title>
+  <meta name="description" content="맑은 공기와 건강한 생태계가 공존하는 서울의 친환경 제로웨이스트 숍, 비건 식당, 자연 명소를 소개합니다.">
   
   <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+  
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- Header Section -->
-  <header id="header">
-    <div class="nav-container">
-      <a href="index.html" class="logo" id="main-logo">SEO<span>U</span>L</a>
+  <!-- App Wrapper Simulator -->
+  <div class="app-frame">
+    
+    <!-- Interactive Search Header -->
+    <header class="app-header">
+      <div class="nav-back-row" style="flex: 1;">
+        <a href="index.html" class="back-btn" aria-label="이전 페이지">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <div class="search-bar-container" style="flex: 1;">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" class="search-input" id="spots-search" placeholder="그린 스폿 검색 (예: 알맹, 비건)">
+        </div>
+      </div>
+    </header>
+
+    <!-- Scrollable Main Content -->
+    <main class="content-wrapper" style="gap: 20px;">
       
-      <div class="menu-toggle" id="mobile-menu-btn" aria-label="메뉴 열기">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <!-- Subpage Hero Banner -->
+      <section class="subpage-hero-banner">
+        <span class="subpage-subtitle">Eco Landmarks</span>
+        <h1 class="subpage-title">서울 그린 스폿 큐레이션</h1>
+      </section>
 
-      <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About SEOUL</a></li>
-          <li><a href="landmarks.html" class="nav-link" style="color: var(--accent-blue);">Landmarks</a></li>
-          <li><a href="experience.html" class="nav-link">Experiences</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+      <!-- Category Filter Tabs -->
+      <section class="tab-btn-row">
+        <button class="tab-nav-btn active" onclick="switchTab('all', this)">All</button>
+        <button class="tab-nav-btn" onclick="switchTab('zero-waste', this)">Zero Waste</button>
+        <button class="tab-nav-btn" onclick="switchTab('vegan', this)">Vegan</button>
+        <button class="tab-nav-btn" onclick="switchTab('nature', this)">Nature</button>
+      </section>
 
-  <!-- Subpage Hero Banner -->
-  <section class="sub-hero">
-    <div class="sub-hero-content">
-      <span class="hero-subtitle">Top Destinations</span>
-      <h1 class="sub-hero-title">서울의 랜드마크</h1>
-      <p class="sub-hero-subtitle">과거의 숨결이 머무는 고궁부터 우주선을 닮은 DDP, 화려함의 중심지 강남까지 꼭 가봐야 할 명소들을 모았습니다.</p>
-    </div>
-  </section>
-
-  <main>
-    <!-- Core Landmarks Section -->
-    <section id="landmarks">
-      <div class="section-header">
-        <span class="section-subtitle">Heritage & Future</span>
-        <h2 class="section-title">서울의 3대 핵심 명소</h2>
-      </div>
-
-      <div class="landmarks-grid">
-        <!-- Landmark 1 -->
-        <article class="landmark-card" id="card-palace">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Heritage</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?auto=format&fit=crop&w=800&q=80" alt="경복궁 근정전 야경">
+      <!-- Grid list of Green Spots -->
+      <section class="about-card-section" id="spots-container" style="gap: 16px;">
+        
+        <!-- Spot 1: Almeng Market (Zero Waste) -->
+        <article class="spot-card" data-category="zero-waste">
+          <div class="spot-image-box">
+            <span class="spot-tag">Zero Waste</span>
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=500&q=80" alt="알맹상점">
           </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">경복궁</h3>
-            <p class="landmark-desc">
-              조선 왕조의 중심이자 한글 창제 등 찬란한 조선의 번영을 이끈 제1 궁궐입니다. 우아한 처마 곡선과 대자연이 어우러진 한국 전통 미학의 결정체입니다.
+          <div class="spot-info">
+            <h3 class="spot-title">알맹상점 (마포점)</h3>
+            <p class="spot-desc">
+              "껍데기는 가라, 알맹이만 오라!" 용기를 직접 가져와 필요한 세제, 화장품, 커피 원두 등을 필요한 양만큼 소분해서 무게 단위로 구매하는 서울 대표 친환경 리필 스테이션입니다.
             </p>
-            <a href="https://english.cha.go.kr" target="_blank" rel="noopener" class="landmark-link" id="link-palace">자세히 보기 <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="spot-link-row">
+              <span class="spot-address">
+                <i class="fa-solid fa-location-dot"></i> 서울 마포구 월드컵로 49
+              </span>
+              <a href="https://almang.net" target="_blank" rel="noopener" class="spot-more-btn">
+                바로가기 <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </article>
 
-        <!-- Landmark 2 -->
-        <article class="landmark-card" id="card-namsan">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Romantic</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1504512485060-750d3e5aa0b1?auto=format&fit=crop&w=800&q=80" alt="N서울타워 전망">
+        <!-- Spot 2: Plant Cafe (Vegan) -->
+        <article class="spot-card" data-category="vegan">
+          <div class="spot-image-box">
+            <span class="spot-tag">Vegan Cafe</span>
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=500&q=80" alt="플랜트 이태원">
           </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">N서울타워</h3>
-            <p class="landmark-desc">
-              서울 한복판, 남산 정상에서 밤하늘을 수놓는 타워입니다. 보석처럼 반짝이는 천만 시민 도시의 초현실적인 파노라마 야경을 품을 수 있는 로맨틱한 명소입니다.
+          <div class="spot-info">
+            <h3 class="spot-title">플랜트 (PLANT) 이태원</h3>
+            <p class="spot-desc">
+              100% 순수 식물성 식재료만을 사용하여 창의적이고 맛있는 서양식 비건 요리를 선사하는 비스트로입니다. 시그니처 템페 볼, 비건 버거, 오가닉 디저트 베이킹이 훌륭합니다.
             </p>
-            <a href="https://www.seoultower.co.kr" target="_blank" rel="noopener" class="landmark-link" id="link-namsan">자세히 보기 <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="spot-link-row">
+              <span class="spot-address">
+                <i class="fa-solid fa-location-dot"></i> 서울 용산구 보광로 117
+              </span>
+              <a href="https://www.plantcafeseoul.com" target="_blank" rel="noopener" class="spot-more-btn">
+                바로가기 <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </article>
 
-        <!-- Landmark 3 -->
-        <article class="landmark-card" id="card-ddp">
-          <div class="landmark-image-wrapper">
-            <span class="landmark-tag">Future</span>
-            <img class="landmark-image" src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?auto=format&fit=crop&w=800&q=80" alt="동대문디자인플라자 전경">
+        <!-- Spot 3: Seoul Forest (Nature) -->
+        <article class="spot-card" data-category="nature">
+          <div class="spot-image-box">
+            <span class="spot-tag">Green Oasis</span>
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=500&q=80" alt="서울숲">
           </div>
-          <div class="landmark-info">
-            <h3 class="landmark-title">동대문 디자인 플라자 (DDP)</h3>
-            <p class="landmark-desc">
-              세계적인 건축가 자하 하디드가 디자인한 비정형 은빛 건축물로, 서울이 품은 미래지향적 크리에이티브 시티로서의 상상력을 대변하는 디자인 문화 허브입니다.
+          <div class="spot-info">
+            <h3 class="spot-title">서울숲 (Seoul Forest)</h3>
+            <p class="spot-desc">
+              삭막한 콘크리트 마천루 숲 사이 한가운데 조성된 푸른 오아시스입니다. 울창한 거목들과 평화로운 한강 유역, 꽃사슴 방사장 등이 어우러져 최상의 숲 힐링과 산림욕을 선사합니다.
             </p>
-            <a href="https://ddp.or.kr" target="_blank" rel="noopener" class="landmark-link" id="link-ddp">자세히 보기 <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="spot-link-row">
+              <span class="spot-address">
+                <i class="fa-solid fa-location-dot"></i> 서울 성동구 동부간선도로 273
+              </span>
+              <a href="https://seoulforest.or.kr" target="_blank" rel="noopener" class="spot-more-btn">
+                바로가기 <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </article>
-      </div>
-    </section>
 
-    <!-- Gangnam Spotlight Section -->
-    <section id="gangnam" style="border-top: 1px solid var(--glass-border); padding-top: 120px; background: linear-gradient(180deg, var(--bg-dark) 0%, #ffffff 50%, var(--bg-dark) 100%);">
-      <div class="section-header">
-        <span class="section-subtitle">The Sparkling Heart</span>
-        <h2 class="section-title">강남, 트렌디한 서울의 중심</h2>
-      </div>
+      </section>
 
-      <div class="gangnam-container">
-        <!-- Gangnam Left Intro -->
-        <div class="gangnam-intro">
-          <h3>화려한 빛과 꺼지지 않는 에너지를 찾아서</h3>
-          <p>
-            강남은 서울에서 가장 현대적이고 화려하게 박동하는 지역입니다. 
-            세계 최고 수준의 트렌디한 패션과 라이프스타일, 하이테크 기업들의 꺼지지 않는 열정이 가득한 마천루, 그리고 초현대적인 도시의 숲 뒤편에 숨은 동양의 고요함까지 오감으로 강남을 탐험해 보세요.
-          </p>
-          <p>
-            스타일리시한 쇼핑 거리와 도심 속 힐링 공간이 교차하는 이곳은, 당신의 오감을 충족시키고 끊임없는 새로운 영감을 불러일으킵니다.
-          </p>
+      <!-- Small Bottom Spacing -->
+      <div class="bottom-spacing"></div>
+
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <div class="nav-tab-item" onclick="location.href='index.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-house"></i>
         </div>
-
-        <!-- Gangnam Right Grid (Spotlight Cards) -->
-        <div class="gangnam-grid">
-          <!-- Spotlight Card 1: Coex Starfield Library -->
-          <article class="gangnam-card" id="gangnam-coex">
-            <div class="gangnam-img-wrapper">
-              <span class="gangnam-tag">Culture</span>
-              <img class="gangnam-img" src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80" alt="코엑스 별마당 도서관">
-            </div>
-            <div class="gangnam-card-info">
-              <h4>별마당 도서관</h4>
-              <p>도심 쇼핑몰 중심에 자리한 거대한 지성의 전당. 압도적인 높이의 책장들이 자아내는 신비롭고 영감 가득한 복합 문화 힐링 공간입니다.</p>
-            </div>
-          </article>
-
-          <!-- Spotlight Card 2: Teheran-ro -->
-          <article class="gangnam-card" id="gangnam-tech">
-            <div class="gangnam-img-wrapper">
-              <span class="gangnam-tag">Tech & Vision</span>
-              <img class="gangnam-img" src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="테헤란로 빌딩숲 야경">
-            </div>
-            <div class="gangnam-card-info">
-              <h4>테헤란로 빌딩숲</h4>
-              <p>대한민국 하이테크 산업과 글로벌 비즈니스의 중추. 낮에는 활기차고 밤이 되면 은빛 불빛과 도로 위 광선으로 빛나는 첨단 미래 도시의 상징입니다.</p>
-            </div>
-          </article>
-
-          <!-- Spotlight Card 3: Bongeunsa -->
-          <article class="gangnam-card" id="gangnam-temple">
-            <div class="gangnam-img-wrapper">
-              <span class="gangnam-tag">Heritage</span>
-              <img class="gangnam-img" src="https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?auto=format&fit=crop&w=800&q=80" alt="강남 봉은사">
-            </div>
-            <div class="gangnam-card-info">
-              <h4>봉은사</h4>
-              <p>화려한 초고층 빌딩 숲 바로 맞은편, 천년의 고요함을 지켜온 사찰입니다. 마천루의 불빛과 고요한 등불이 만들어내는 극적인 평화와 사색을 경험해보세요.</p>
-            </div>
-          </article>
+        <span class="nav-tab-label">Home</span>
+      </div>
+      
+      <div class="nav-tab-item active" onclick="location.href='landmarks.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-solid fa-magnifying-glass"></i>
         </div>
+        <span class="nav-tab-label">Search</span>
       </div>
-    </section>
-  </main>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="footer-container">
-      <div class="footer-about">
-        <a href="index.html" class="logo" id="footer-logo">SEO<span>U</span>L</a>
-        <p>전통적인 문화 가치와 하이테크 미래가 함께 빛나고 쉼 없이 전진하는 매력 가득한 메트로폴리스 서울.</p>
-        <div class="social-links">
-          <a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube" id="social-youtube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.instagram.com/seoul_official" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.facebook.com/seoul.kr" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook" id="social-facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      
+      <div class="nav-tab-item" onclick="toggleFavoritesTab()">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
         </div>
+        <span class="nav-tab-label">Favorites</span>
       </div>
+      
+      <div class="nav-tab-item" onclick="location.href='about.html'">
+        <div class="nav-tab-icon-wrapper">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <span class="nav-tab-label">Profile</span>
+      </div>
+    </nav>
 
-      <div class="footer-links">
-        <h4>Discover</h4>
-        <ul>
-          <li><a href="about.html">서울 스토리</a></li>
-          <li><a href="landmarks.html">명소 추천</a></li>
-          <li><a href="experience.html">문화 예술</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <h4>Official Sites</h4>
-        <ul>
-          <li><a href="https://www.seoul.go.kr" target="_blank" rel="noopener">서울시청</a></li>
-          <li><a href="https://korean.visitseoul.net" target="_blank" rel="noopener">Visit Seoul 포털</a></li>
-          <li><a href="https://www.youtube.com/user/seoullive" target="_blank" rel="noopener">라이브 서울</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Seoul Metropolitan Government. Designed for Global Promotion.</p>
-      <div class="footer-bottom-links">
-        <a href="#">개인정보처리방침</a>
-        <a href="#">이용약관</a>
-      </div>
-    </div>
-  </footer>
+  </div>
 
   <!-- Scripts -->
   <script>
-    // 1. Header scroll effect
-    const header = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
+    // 1. Tab switching and filtering
+    let currentCategory = 'all';
+    
+    function switchTab(category, btn) {
+      // Toggle active button style
+      const buttons = document.querySelectorAll('.tab-nav-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      currentCategory = category;
+      filterSpots();
+    }
+
+    // 2. Real-time Search input logic
+    const searchInput = document.getElementById('spots-search');
+    searchInput.addEventListener('input', () => {
+      filterSpots();
+    });
+
+    // Parse query params (if search parameter is passed from home search bar)
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const searchParam = params.get('search');
+      if (searchParam) {
+        searchInput.value = searchParam;
+        filterSpots();
       }
     });
 
-    // 2. Mobile Navigation Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navMenu = document.getElementById('nav-menu');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenuBtn.classList.toggle('active');
-      navMenu.classList.toggle('active');
-    });
-
-    // Close menu when link is clicked
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenuBtn.classList.remove('active');
-        navMenu.classList.remove('active');
+    // 3. Combined Filter Engine (Tab + Search query)
+    function filterSpots() {
+      const query = searchInput.value.toLowerCase().trim();
+      const cards = document.querySelectorAll('.spot-card');
+      
+      cards.forEach(card => {
+        const title = card.querySelector('.spot-title').innerText.toLowerCase();
+        const desc = card.querySelector('.spot-desc').innerText.toLowerCase();
+        const category = card.dataset.category;
+        
+        const matchesCategory = (currentCategory === 'all' || category === currentCategory);
+        const matchesQuery = (!query || title.includes(query) || desc.includes(query));
+        
+        if (matchesCategory && matchesQuery) {
+          card.style.display = 'block';
+          card.style.animation = 'fadeIn 0.3s ease';
+        } else {
+          card.style.display = 'none';
+        }
       });
-    });
+    }
+
+    // 4. Favorites bottom tab trigger
+    function toggleFavoritesTab() {
+      const toast = document.createElement('div');
+      toast.className = 'toast-notif';
+      toast.innerText = '관심 상품 목록을 불러옵니다.';
+      Object.assign(toast.style, {
+        position: 'absolute',
+        bottom: '100px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        background: 'rgba(30, 38, 32, 0.9)',
+        color: '#FAF7F2',
+        padding: '10px 20px',
+        borderRadius: '20px',
+        fontSize: '0.8rem',
+        fontWeight: '500',
+        zIndex: '1000',
+        boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
+        pointerEvents: 'none',
+        opacity: '0',
+        transition: 'all 0.3s ease'
+      });
+
+      document.querySelector('.app-frame').appendChild(toast);
+      
+      setTimeout(() => {
+        toast.style.opacity = '1';
+        toast.style.bottom = '110px';
+      }, 50);
+
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.bottom = '100px';
+        setTimeout(() => toast.remove(), 300);
+      }, 2000);
+    }
   </script>
+
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
 </body>
 </html>
